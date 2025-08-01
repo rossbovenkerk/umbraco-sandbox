@@ -1,0 +1,135 @@
+:root {
+  --color-white: #fff;
+  --color-primary-text: #575757;
+  --color-error-red: #a70000;
+
+  --color-purple: #744888;
+  --color-purple-light: #cbaeee;
+
+  --color-petrol: #003c46;
+  --color-petrol-90: #1a5059;
+  --color-petrol-80: #33636B;
+  --color-petrol-70: #4d777e;
+  --color-petrol-50: #668a90;
+  --color-petrol-40: #d9e2e3;
+  --color-petrol-30: #99b1b5;
+
+  --color-petrol-30b: #b2c4c7;
+  --color-petrol-10: #e5ebec;
+
+  --color-blue: #0096ff;
+  --color-blue-50: #80cbff;
+  --color-blue-30: #b2dfff;
+  --color-blue-10: #e5f4ff;
+
+  --color-yellow: #ffe500;
+  --color-yellow-light: #fff099;
+  --color-yellow-10: #fffacc;
+
+  --color-red: #f16545;
+  --color-red-light: #e89582;
+  --color-red-10: #fce0da;
+
+  --color-green: #0d935e;
+  --color-green-light: #0dffad;
+  --color-green-10: #dbfff3;
+
+  --color-grey: #c8c8c8;
+  --color-grey-light: #eff4f4;
+  --color-grey-10: #f0f0f0;
+
+  --breakpoint-xxl: 1400px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-lg: 992px;
+  --breakpoint-md: 768px;
+  --breakpoint-sm: 600px;
+  --breakpoint-xs: 576px;
+
+  --base-responsive-padding: 2rem;
+}
+
+
+
+body {
+    background: var(--color-white);
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--color-primary-text);
+    transition: all .4s ease-in-out;
+}
+
+main {
+
+}
+
+
+/*  HEADERS  */
+.headline-mega {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 7.5rem;
+  letter-spacing: -0.67px;
+}
+
+
+.headline-mega-alternative {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5.5rem;
+  letter-spacing: -1.5px;
+}
+
+h1,
+.headline-one {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: -1px;
+}
+
+h2,
+.headline-two {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.5px;
+}
+
+h3,
+.headline-three {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+h4,
+.headline-four {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h5,
+.headline-five {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+h6,
+.headline-six {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+

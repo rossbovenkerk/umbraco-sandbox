@@ -1,0 +1,23 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Home>
+@{
+	Layout = "primaryMaster.cshtml";
+}
+
+<section>
+	<h1>@Model.SiteTitle</h1>
+	<p>
+		
+		@Model.SiteSubtitle
+	</p>
+
+	
+	@{
+		var heroImage = Model.HeroImage;
+		if (heroImage is MediaWithCrops mediaEntry)
+		{
+			<img src="@mediaEntry.MediaUrl()" style="width:200px"/>
+		}
+	}
+</section>

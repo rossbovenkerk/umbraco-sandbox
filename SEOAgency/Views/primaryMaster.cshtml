@@ -1,0 +1,49 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+<!doctype html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title></title>
+	<meta name="description" content="" />
+	<meta name="robots" content="index, follow">
+
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />	
+	<meta property="og:image" content="" />
+	<meta name="twitter:card" content="summary_large_image">		
+	<meta name="twitter:site" content="@@twitter">
+	<meta name="twitter:creator" content="@@twitter">
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+
+	<header class="site-header sticky-top" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+		<nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+			<a href="/" tabindex="0" title="Home"><img src="" alt="" /></a>
+			<ul>
+				<li>Solutions</li>
+				<li>Benefits</li>
+				<li>Pricing</li>
+			</ul>
+			<a href="/get-started" title="Get started today"><button class="btn-cta" title="Get started today" >Get started</button></a>
+		</nav>
+	</header>
+
+	<main>
+		<div id="content-container">
+			@RenderBody()
+		</div>
+
+		 @await Html.PartialAsync("footer")
+		
+		
+
+	</main>
+
+</body>
