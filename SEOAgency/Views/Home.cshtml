@@ -5,19 +5,17 @@
 	Layout = "primaryMaster.cshtml";
 }
 
-<section>
+<section id="section-hero">
 	<h1>@Model.SiteTitle</h1>
 	<p>
-		
 		@Model.SiteSubtitle
 	</p>
-
 	
 	@{
 		var heroImage = Model.HeroImage;
 		if (heroImage is MediaWithCrops mediaEntry)
 		{
-			<img src="@mediaEntry.MediaUrl()" style="width:200px"/>
+			<img src="@mediaEntry.MediaUrl()" />
 		}
 	}
 </section>
