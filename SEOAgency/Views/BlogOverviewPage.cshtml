@@ -1,0 +1,43 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "content.cshtml";
+}
+<section class="container">
+	<div id="featured-post"> 
+		<p>Featured Post</p>
+	@{
+		IPublishedContent featuredPost = Model.Value<IPublishedContent>("featuredPost");
+		if(featuredPost != null)
+		{
+			<a href = "@featuredPost.Url()" class = "featured-link"><div class = "featured-blog">
+				@{
+					//var featureImage = featuredPost.Value<IPublishedContent>("thumbnailImage");
+				}
+				<div class = "image-box" ></div>
+					<h2>@featuredPost.Value("blogPostTitle")</h2>
+					<a href="@featuredPost.Url()" class="btn btn-primary"> Read More <span class="iconify" data-icon="mdi-arrow-right-thin"></span></a>
+				</div>
+			</a>
+		}
+	}
+	</div>
+
+
+	@{
+		var selection = Umbraco.Content(Guid.Parse("9f6d300e-5ca1-48b2-a797-751aa46ee1d7"))
+		.ChildrenOfType("blogItem")
+		.Where(x => x.IsVisible())
+		.OrderByDescending(x => x.CreateDate);
+	}
+	<div id="blog-items">
+		<p>All Blog Posts</p>
+		@foreach (var item in selection)
+		{
+			<a href="@item.Url()">
+					<h3 class="headeheadline-four">@item.Value("blogPostTitle")</h3>
+					<p>Read more <span class="iconify" data-icon="mdi-arrow-right-thin"></span></p>
+			</a><br />		        
+		}
+	</div>
+</section>

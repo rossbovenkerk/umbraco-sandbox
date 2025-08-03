@@ -149,7 +149,7 @@ footer {
 
 main {
     background-color: var(--color-white);
-    min-height: 1.0vh;
+    min-height: calc(100.0vh - 152px);
 
 
     section#section-hero {
@@ -259,4 +259,42 @@ button {
 button:hover {
         cursor: pointer;
         background-color:  var(--color-yellow-10);
+}
+
+section.container {
+    margin: auto  auto;
+    width: 100%;
+    padding: 2em 0 3em 0;
+}
+
+section.resource {
+    margin: auto  auto;
+    width: 100%;
+    padding: 2rem 0;
+
+    article {
+        margin: auto  auto;
+        width: var(--artboard-width);
+
+        h1 {
+            color: var(--color-red);
+            margin: 0;
+            padding: 0 0 2rem 0;
+        }
+
+    }
+
+}
+
+div#featured-post {
+    margin: auto  auto;
+    width: var(--artboard-width);
+
+    padding: 3em 0;
+    border-bottom: solid 1px var(--color-red-light);
+}
+
+div#blog-items {
+    margin: auto  auto;
+    width: var(--artboard-width);
 }

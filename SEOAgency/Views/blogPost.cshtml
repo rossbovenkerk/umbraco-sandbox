@@ -1,0 +1,17 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<BlogItem>
+@{
+	Layout = "resource.cshtml";
+}
+
+<article>
+
+	<h1>@Model.Value("blogPostTitle")</h1>
+	<div>
+		@Model.Value("blogPostContent")
+	</div>
+	<a href="/blog/" title="Read more from our blog">
+		<button type="button">View blog</button>
+	</a>
+</article>
+
