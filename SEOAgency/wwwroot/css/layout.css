@@ -265,7 +265,14 @@ section.container {
     margin: auto  auto;
     width: 100%;
     padding: 2em 0 3em 0;
+
+    
 }
+
+section.section-full-width-content {
+        margin: auto  auto;
+        width: var(--artboard-width);
+    }
 
 section.resource {
     margin: auto  auto;

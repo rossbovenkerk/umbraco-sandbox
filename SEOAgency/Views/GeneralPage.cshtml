@@ -1,8 +1,8 @@
 ﻿@using Umbraco.Cms.Web.Common.PublishedModels;
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 @{
-	Layout = "primaryMaster.cshtml";
+	Layout = "content.cshtml";
 }
-<section class="container">
-	@RenderBody()
-</section>
+
+
+@await Html.GetBlockGridHtmlAsync(Model, "contentBlocks")

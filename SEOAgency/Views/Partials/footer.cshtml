@@ -1,9 +1,15 @@
-﻿<footer>
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+<footer>
 
     <div id="footer-util">
         <div id="footer-util-links">
             <ul>
-                <li>Privacy Policy</li>
+                <li>
+                    <a href='@Umbraco.Content("1fb45187-226c-4d75-a981-b63436cb5854").Url()'>
+					    @Umbraco.Content("1fb45187-226c-4d75-a981-b63436cb5854").Name
+    				</a>
+                </li>
                 <li>Terms of Use</li>   
                 <li>Cookie Policy</li>
             </ul>	
